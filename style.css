@@ -1,0 +1,57 @@
+body 
+{
+    margin: 0;
+    height: 100vh;
+    background-color: #181e2a;
+    overflow: hidden;
+    background-image: url(images/PO-BG.png);
+
+    background-color: #181e2a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img
+{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 43px;
+    left: 91px;
+}
+
+.title h1
+{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #bfb9ed;
+    font-size: 260px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    letter-spacing: 20px;
+    font-weight: bold;
+}
+.title h2
+{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #bfb9ed;
+    font-size: 80px;
+    margin: 0;
+    font-weight: 100;
+    font-style: italic;
+}
+.title p
+{
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+    text-align: center;
+    color: #bfb9ed;
+    margin: 0;
+    width: 600px;
+    padding-left: 150px;
+    font-weight: 100;
+    font-style: italic;
+}
