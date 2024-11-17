@@ -1,0 +1,37 @@
+body 
+{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.main
+{
+    height: 100vh;
+    background-color: #181e2a;
+    /* overflow: hidden; */
+    background-image: url(images/PO-BG.png);
+
+    background-color: #181e2a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #bfb9ed;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+/*login gradiant #ed1c24 #93278f #2e3192 ------- login icons #8ed1f0 ------- login text #93278f*/
+
+.border
+{
+    border: 3px solid red;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: linear-gradient(to right, #ed1c24, #93278f, #2e3192);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 300px;
+}
