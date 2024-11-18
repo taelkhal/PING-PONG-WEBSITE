@@ -23,10 +23,11 @@ body
 
 .main-logo
 {
-    width: 13vw;
+    width: 11vw;
     /* height: 280px; */
     align-self: flex-start;
     margin-left: 85px;
+    margin-top: 40px;
 }
 
 .inner-main {
