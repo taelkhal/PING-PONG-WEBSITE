@@ -153,3 +153,26 @@ body
     padding: 0 2vw 2vh 0;
     margin-top: auto;
 }
+.btn2
+{
+    border: none;
+    background: linear-gradient(to right , #ed1c24, #93278f, #2e3192);
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    border-radius: 40px;
+    width: 11.5vw;
+    height: 6vh;
+    /* text-align: center; */
+    padding-top: 1.2vh;
+    font-weight: bold;
+    font-size: 1vw;
+    margin: 1vh 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.btn2 img
+{
+    height: 3vh;
+    width: 3vw;
+    padding-right: 0.5vw;
+}

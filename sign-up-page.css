@@ -78,7 +78,7 @@ body
     font-size: 1vw;
     /* top: 45vh; */
     line-height: 2vh;
-}
+}   
 /* .border-bottom
 {
     display: flex;
@@ -123,6 +123,29 @@ body
     font-size: 1vw;
     margin: 1vh 0 0 7vw;
 }
+.btn2
+{
+    border: none;
+    background: linear-gradient(to right , #ed1c24, #93278f, #2e3192);
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    border-radius: 40px;
+    width: 11.5vw;
+    height: 6vh;
+    /* text-align: center; */
+    padding-top: 1.2vh;
+    font-weight: bold;
+    font-size: 1vw;
+    margin: 1vh 0 0 7vw;
+    display: flex;
+    justify-content: center;
+}
+.btn2 img
+{
+    height: 3vh;
+    width: 3vw;
+    padding-right: 0.5vw;
+}
 .footer
 {
     display: flex;
@@ -159,4 +182,232 @@ body
     /* justify-content: space-between; */
     /* align-items: center; */
     /* flex-direction: row; */
+}
+@media (min-height : 2160px)
+{
+    .border-up,
+    .border-bottom
+    {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .border-up h2
+    {
+        font-size: 1vw;
+    }
+
+    .border-up p 
+    {
+        font-size: 0.2vw;
+        line-height: 1vh;
+        width: 60%;
+    }
+
+    .btn 
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 11vw;
+    }
+
+    .brd 
+    {
+        width: 40%;
+        font-size: 10px;
+    }
+    .btn2
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 13vw;
+        margin-left: 11vw;
+    }
+}
+
+@media (max-width: 1920px) 
+{
+    .border-up,
+    .border-bottom 
+    {
+        width: 35vw;
+        height: 35vh;
+    }
+
+    .border-up h2 
+    {
+        font-size: 2.5vw;
+    }
+
+    .border-up p 
+    {
+        font-size: 1.2vw;
+        line-height: 3vh;
+        width: 60%;
+    }
+
+    .btn 
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 11vw;
+    }
+
+    .brd 
+    {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        width: 40%;
+        font-size: 10px;
+    }
+    .btn2
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 13vw;
+        margin-left: 11vw;
+    }
+}
+@media (max-width: 1024px) 
+{
+    .border-up,
+    .border-bottom 
+    {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .border-up h2 
+    {
+        font-size: 2.5vw;
+    }
+
+    .border-up p 
+    {
+        font-size: 1.2vw;
+        line-height: 3vh;
+        width: 60%;
+    }
+
+    .btn 
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 13vw;
+    }
+
+    .brd 
+    {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        width: 40%;
+        font-size: 10px;
+    }
+    .btn2
+    {
+        width: 12vw;
+        font-size: 1vw;
+        margin-left: 13vw;
+        margin-left: 32.5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 0 5vw; 
+    }
+
+    .border-up,
+    .border-bottom {
+        width: 70%;
+        /* margin-top: 5vh; */
+    }
+
+    .border-up h2 {
+        font-size: 5vw;
+    }
+
+    .border-up p {
+        font-size: 1.5vw;
+        line-height: 2.5vh;
+    }
+
+    .btn {
+        width: 35%;
+        font-size: 1.8vw;
+        margin: 1.5vh auto; 
+    }
+
+    .brd 
+    {
+        width: 35%;
+        font-size: 10px;
+        margin: 1vh 0;
+        margin-left: 3vw;
+    }
+
+    .border-bottom a {
+        font-size: 1.2vw;
+    }
+    .btn2
+    {
+        width: 35%;
+        font-size: 1.8vw;
+        padding: 1.5vh 0;
+        margin-left: 32.5%;
+    }
+}
+
+
+@media (max-width: 576px)
+{
+    .border-up,
+    .border-bottom 
+    {
+        width: 90%;
+        /* height: auto; */
+        /* margin-top: 3vh; */
+    }
+
+    .border-up h2 
+    {
+        font-size: 6vw; 
+    }
+
+    .border-up p 
+    {
+        font-size: 2.5vw;
+        width: 50%; 
+    }
+
+    .btn 
+    {
+        width: 35%;
+        font-size: 2vw; 
+        padding: 1.5vh 0;
+    }
+
+    .brd {
+        width: 35%;
+        font-size: 12px;
+        height: 5vh;
+        padding-left: 2vw;
+    }
+
+    .border-bottom a 
+    {
+        font-size: 3vw;
+        text-align: center;
+    }
+    .btn2
+    {
+        width: 35%;
+        font-size: 2vw; 
+        padding: 1.5vh 0;
+        margin-left: 32.5%;
+    }
 }
