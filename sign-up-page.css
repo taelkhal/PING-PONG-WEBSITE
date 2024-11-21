@@ -183,7 +183,7 @@ body
     /* align-items: center; */
     /* flex-direction: row; */
 }
-@media (min-height : 2160px)
+@media (max-height : 700px)
 {
     .border-up,
     .border-bottom
@@ -196,19 +196,22 @@ body
     {
         font-size: 1vw;
     }
-
+    .logo 
+    {
+        width: 6vw;
+    }
     .border-up p 
     {
-        font-size: 0.2vw;
-        line-height: 1vh;
+        font-size: 0.5vw;
+        line-height: 1.3vh;
         width: 60%;
     }
 
     .btn 
     {
-        width: 12vw;
-        font-size: 1vw;
-        margin-left: 11vw;
+        width: 10vw;
+        font-size: 0.5vw;
+        margin-left: 14vw;
     }
 
     .brd 
@@ -218,10 +221,54 @@ body
     }
     .btn2
     {
-        width: 12vw;
-        font-size: 1vw;
-        margin-left: 13vw;
-        margin-left: 11vw;
+        width: 10vw;
+        font-size: 0.5vw;
+        /* margin-left: 13vw; */
+        margin-left: 14vw;
+    }
+}
+@media (max-height : 1080px)
+{
+    .border-up,
+    .border-bottom
+    {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .border-up h2
+    {
+        font-size: 1.5vw;
+    }
+    .logo 
+    {
+        width: 10vw;
+    }
+    .border-up p 
+    {
+        font-size: 0.7vw;
+        line-height: 1.7vh;
+        width: 60%;
+    }
+
+    .btn 
+    {
+        width: 10vw;
+        font-size: 0.8vw;
+        margin-left: 14vw;
+    }
+
+    .brd
+    {
+        width: 40%;
+        font-size: 10px;
+    }
+    .btn2
+    {
+        width: 10vw;
+        font-size: 0.8vw;
+
+        margin-left: 14vw;
     }
 }
 
