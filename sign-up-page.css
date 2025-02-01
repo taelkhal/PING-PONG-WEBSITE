@@ -362,7 +362,8 @@ body
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
     .main {
         flex-direction: column;
         padding: 0 5vw; 
