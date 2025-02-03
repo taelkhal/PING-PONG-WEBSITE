@@ -22,11 +22,71 @@
                 <input type="text" class="brd" placeholder="Username"><br>
                 <input type="password" class="brd" placeholder="Password">
                 <!-- <button class="btn" type="submit">Login</button> -->
-                <button class="btn" type="button" onclick="location.href='dashboard.html';">Login</button>
+                <button class="btn" type="button" >Login</button>
                 <button  class="btn2" type="submit"><img src="images/42.png">Network</button>
             </form>
             <a href="sign-up-page.html">Create Account</a>
         </div>
     </div>
+    <script>
+        // document.querySelector('.btn').addEventListener('click', async (e) => {
+        //     e.preventDefault();
+        //     const username = document.querySelector('input[placeholder="Username"]').value;
+        //     const password = document.querySelector('input[placeholder="Password"]').value;
+    
+        //     try {
+        //         const response = await fetch('/api/login', {
+        //             method: 'POST',
+        //             headers: { 'Content-Type': 'application/json' },
+        //             body: JSON.stringify({ username, password }),
+        //         });
+    
+        //         if (response.ok) {
+        //             const data = await response.json();
+        //             alert('Login successful');
+        //             window.location.href = 'dashboard.html'; // Redirect to dashboard
+        //         } else {
+        //             alert('Login failed');
+        //         }
+        //     } catch (error) {
+        //         console.error('Error logging in:', error);
+        //     }
+        // });
+        document.querySelector('.btn').addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    const username = document.querySelector('input[placeholder="Username"]').value.trim();
+    const password = document.querySelector('input[placeholder="Password"]').value.trim();
+
+    // if (!username || !password) {
+    //     alert('Username and password are required!');
+    //     return;
+    // }
+
+    try {
+        const response = await fetch('http://127.0.0.1:8000/login/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            // alert('Login successful!');
+            window.location.href = 'dashboard.html';
+        } else {
+            const errorData = await response.json();
+            // alert(errorData.error || 'Invalid username or password');
+        }
+    } catch (error) {
+        console.error('Error during login:', error);
+        alert('Something went wrong. Please try again later.');
+    }
+});
+
+    </script>
+    
 </body>
 </html>

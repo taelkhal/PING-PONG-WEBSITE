@@ -67,14 +67,9 @@ body
     /* display: flex;  */
     /* gap: 20px; Space between links */
     padding-right: 4.5vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
-.test a.active {
-    border: #bfb9ed solid 3px;
-    border-radius: 20px;
-    background-color: rgba(191, 185, 237, 0.2);
-}
 
 /* .right-section a
 {
