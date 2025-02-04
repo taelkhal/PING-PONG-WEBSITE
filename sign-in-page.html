@@ -22,6 +22,7 @@
                 <input type="text" class="brd" placeholder="Username"><br>
                 <input type="password" class="brd" placeholder="Password">
                 <!-- <button class="btn" type="submit">Login</button> -->
+                <p class="error-msg" style="color: red;"></p>
                 <button class="btn" type="button" >Login</button>
                 <button  class="btn2" type="submit"><img src="images/42.png">Network</button>
             </form>
@@ -52,16 +53,55 @@
         //         console.error('Error logging in:', error);
         //     }
         // });
-        document.querySelector('.btn').addEventListener('click', async (e) => {
+//         document.querySelector('.btn').addEventListener('click', async (e) => {
+//     e.preventDefault();
+
+//     const username = document.querySelector('input[placeholder="Username"]').value.trim();
+//     const password = document.querySelector('input[placeholder="Password"]').value.trim();
+
+//     // if (!username || !password) {
+//     //     alert('Username and password are required!');
+//     //     return;
+//     // }
+
+//     try {
+//         const response = await fetch('http://127.0.0.1:8000/login/', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({ username, password }),
+//         });
+
+//         if (response.ok) {
+//             const data = await response.json();
+//             // alert('Login successful!');
+//             window.location.href = 'dashboard.html';
+//         } else {
+//             const errorData = await response.json();
+//             // alert(errorData.error || 'Invalid username or password');
+//         }
+//     } catch (error) {
+//         console.error('Error during login:', error);
+//         alert('Something went wrong. Please try again later.');
+//     }
+// });
+document.querySelector('.btn').addEventListener('click', async (e) => {
     e.preventDefault();
 
     const username = document.querySelector('input[placeholder="Username"]').value.trim();
     const password = document.querySelector('input[placeholder="Password"]').value.trim();
+    const errorMsg = document.querySelector('.error-msg');
 
-    // if (!username || !password) {
-    //     alert('Username and password are required!');
-    //     return;
-    // }
+    // Clear any previous error message
+    errorMsg.style.display = 'none';
+    errorMsg.textContent = '';
+
+    if (!username || !password) {
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Username and password are required!';
+        return;
+    }
 
     try {
         const response = await fetch('http://127.0.0.1:8000/login/', {
@@ -74,15 +114,16 @@
 
         if (response.ok) {
             const data = await response.json();
-            // alert('Login successful!');
-            window.location.href = 'dashboard.html';
+            window.location.href = 'dashboard.html'; // Redirect to dashboard
         } else {
             const errorData = await response.json();
-            // alert(errorData.error || 'Invalid username or password');
+            errorMsg.style.display = 'block';
+            errorMsg.textContent = errorData.error || 'Invalid username or password';
         }
     } catch (error) {
         console.error('Error during login:', error);
-        alert('Something went wrong. Please try again later.');
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Something went wrong. Please try again later.';
     }
 });
 
